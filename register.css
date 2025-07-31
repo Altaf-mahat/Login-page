@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("face.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.register-form {
+  width: 350px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px 35px;
+  box-shadow: 0 0 30px rgba(0, 255, 200, 0.2);
+  border: 2px solid rgba(0, 255, 255, 0.2);
+  animation: floatUp 0.6s ease;
+  transition: all 0.3s ease-in-out;
+}
+
+.register-form:hover {
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.5), 0 0 55px rgba(0, 255, 180, 0.3);
+  transform: translateY(-5px);
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.register-form h2 {
+  background: linear-gradient(135deg, #b6ff00, #00ffc8);
+  padding: 12px;
+  font-size: 22px;
+  border-radius: 10px;
+  text-align: center;
+  color: #900000;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 15px rgba(0, 255, 200, 0.3);
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.register-form input:focus {
+  outline: none;
+}
+
+.register-form button {
+  background: linear-gradient(135deg, #00f260, #0575e6);
+  border: none;
+ 
+  padding: 12px 0;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 15px;
+}
+
+.register-form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.8);
+}
+
+.bottom-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.bottom-link a {
+  color: #00ffff;
+  text-decoration: none;
+  border-bottom: 1px dashed #00ffff;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.bottom-link a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff;
+}
